@@ -104,7 +104,6 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	privileged: true,
 	system_ext_specific: true,
 }
 
@@ -212,6 +211,7 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+	privileged: true,
 	system_ext_specific: true,
 }
 
