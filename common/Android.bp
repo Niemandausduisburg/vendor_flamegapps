@@ -5,6 +5,40 @@
 soong_namespace {
 }
 android_app_import {
+	name: "AndroidAutoPrebuilt",
+	overrides: ["AndroidAutoStubPrebuilt"],
+	owner: "gapps",
+	apk: "proprietary/product/app/AndroidAutoPrebuilt/AndroidAutoPrebuilt.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "Chrome",
+	owner: "gapps",
+	apk: "proprietary/product/app/Chrome/Chrome.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "TrichromeLibrary",
+	owner: "gapps",
+	apk: "proprietary/product/app/TrichromeLibrary/TrichromeLibrary.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "CalculatorGooglePrebuilt",
 	overrides: ["Calculator", "ExactCalculator"],
 	owner: "gapps",
@@ -13,6 +47,18 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "Drive",
+	owner: "gapps",
+	apk: "proprietary/product/app/Drive/Drive.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -30,6 +76,27 @@ android_app_import {
 	name: "GoogleContactsSyncAdapter",
 	owner: "gapps",
 	apk: "proprietary/product/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "GoogleTTS",
+	owner: "gapps",
+	apk: "proprietary/product/app/GoogleTTS/GoogleTTS.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "PrebuiltGmail",
+	owner: "gapps",
+	apk: "proprietary/product/app/PrebuiltGmail/PrebuiltGmail.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -58,6 +125,7 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -120,6 +188,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "Maps",
+	owner: "gapps",
+	apk: "proprietary/product/app/Maps/Maps.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "SoundPickerGooglePrebuilt",
 	owner: "gapps",
 	apk: "proprietary/product/app/SoundPickerGooglePrebuilt/SoundPickerGooglePrebuilt.apk",
@@ -134,6 +213,18 @@ android_app_import {
 	name: "WallpaperPickerGooglePrebuilt",
 	owner: "gapps",
 	apk: "proprietary/product/app/WallpaperPickerGooglePrebuilt/WallpaperPickerGooglePrebuilt.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "WebViewGoogle",
+	overrides: ["webview", "Webview"],
+	owner: "gapps",
+	apk: "proprietary/product/app/WebViewGoogle/WebViewGoogle.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -182,6 +273,18 @@ android_app_import {
 	name: "ConfigUpdater",
 	owner: "gapps",
 	apk: "proprietary/product/priv-app/ConfigUpdater/ConfigUpdater.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "GoogleAssistant",
+	owner: "gapps",
+	apk: "proprietary/product/priv-app/GoogleAssistant/GoogleAssistant.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -278,6 +381,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "MatchmakerPrebuilt",
+	owner: "gapps",
+	apk: "proprietary/product/priv-app/MatchmakerPrebuilt/MatchmakerPrebuilt.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "Phonesky",
 	owner: "gapps",
 	apk: "proprietary/product/priv-app/Phonesky/Phonesky.apk",
@@ -338,3 +453,14 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+android_app_import {
+	name: "Velvet",
+	owner: "gapps",
+	apk: "proprietary/product/priv-app/Velvet/Velvet.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
