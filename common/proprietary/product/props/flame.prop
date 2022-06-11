@@ -4,9 +4,6 @@ ro.flame.android=12.1
 ro.flame.sdk=32
 ro.flame.arch=arm64
 ro.flame.edition=full
-ro.flame.required_size=785776
-
-# Changes for Canary
-ro.flame.build_date=20220405
-ro.flame.build_time=1044
+ro.flame.build_date=2022-05-24
+ro.flame.required_size=793972
 
